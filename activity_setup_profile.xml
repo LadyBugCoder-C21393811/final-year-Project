@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_setup_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A9A9A9"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Welcome message -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:text="@string/welcome_message"
+        android:textSize="18sp"
+        android:textColor="#000000" />
+
+    <!-- Username input -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username_prompt"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/username_hint"
+        android:inputType="textPersonName"
+        android:textColor="#800000"
+        android:textColorHint="#800000"
+        android:autofillHints="username" />
+
+    <!-- Gender selection -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="@string/gender_prompt"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+    <RadioGroup
+        android:id="@+id/genderRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/femaleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:buttonTint="#FF0000"
+            android:text="@string/female" />
+
+        <RadioButton
+            android:id="@+id/maleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:buttonTint="#FF0000"
+            android:text="@string/male" />
+
+        <RadioButton
+            android:id="@+id/otherRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:buttonTint="#FF0000"
+            android:text="@string/other" />
+
+        <RadioButton
+            android:id="@+id/notSayRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:buttonTint="#FF0000"
+            android:text="@string/not_say" />
+    </RadioGroup>
+
+    <!-- Date of birth input -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="@string/dob_prompt"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/dobText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/dob_hint"
+        android:inputType="date"
+        android:textColor="#800000"
+        android:textColorHint="#800000" />
+
+    <!-- Place of origin input -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="@string/place_origin_prompt"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/placeOfOriginText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/place_origin_hint"
+        android:inputType="text"
+        android:textColor="#800000"
+        android:textColorHint="#800000"
+        android:autofillHints="address" />
+
+    <!-- Disability type input -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="@string/disability_prompt"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/disabilityTypeText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/disability_hint"
+        android:inputType="text"
+        android:textColor="#800000"
+        android:textColorHint="#800000" />
+
+    <!-- Mobility aids input -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="@string/mobility_aids_prompt"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/mobilityAidsText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/mobility_aids_hint"
+        android:inputType="text"
+        android:textColorHint="#800000" />
+
+    <Button
+        android:id="@+id/buttonncontinue"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="@string/button_text"
+        android:textColor="#B00000" />
+
+</LinearLayout>
