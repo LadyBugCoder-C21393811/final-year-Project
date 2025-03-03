@@ -7,7 +7,6 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Welcome message -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -16,7 +15,6 @@
         android:textSize="18sp"
         android:textColor="#000000" />
 
-    <!-- Username input -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,7 +32,6 @@
         android:textColorHint="#800000"
         android:autofillHints="username" />
 
-    <!-- Gender selection -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -53,32 +50,31 @@
             android:id="@+id/femaleRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
-            android:buttonTint="#FF0000"
+            android:buttonTint="@color/radio_button_color"
             android:text="@string/female" />
 
         <RadioButton
             android:id="@+id/maleRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
-            android:buttonTint="#FF0000"
+            android:buttonTint="@color/radio_button_color"
             android:text="@string/male" />
 
         <RadioButton
             android:id="@+id/otherRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
-            android:buttonTint="#FF0000"
+            android:buttonTint="@color/radio_button_color"
             android:text="@string/other" />
 
         <RadioButton
             android:id="@+id/notSayRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
-            android:buttonTint="#FF0000"
+            android:buttonTint="@color/radio_button_color"
             android:text="@string/not_say" />
     </RadioGroup>
 
-    <!-- Date of birth input -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -96,7 +92,6 @@
         android:textColor="#800000"
         android:textColorHint="#800000" />
 
-    <!-- Place of origin input -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -115,7 +110,6 @@
         android:textColorHint="#800000"
         android:autofillHints="address" />
 
-    <!-- Disability type input -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -133,7 +127,6 @@
         android:textColor="#800000"
         android:textColorHint="#800000" />
 
-    <!-- Mobility aids input -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -142,18 +135,32 @@
         android:textSize="16sp"
         android:textColor="#000000" />
 
-    <EditText
-        android:id="@+id/mobilityAidsText"
+    <Spinner
+        android:id="@+id/mobilityAidsSpinner"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:hint="@string/mobility_aids_hint"
-        android:inputType="text"
-        android:textColorHint="#800000" />
+        android:backgroundTint="#800000"
+        android:spinnerMode="dropdown" />
+
+    <EditText
+        android:id="@+id/otherMobilityiop"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Please specify"
+        android:textColorHint="#800000"
+        android:visibility="gone"
+        android:layout_marginTop="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
     <Button
         android:id="@+id/buttonncontinue"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="39dp"
+        android:layout_gravity="bottom"
         android:backgroundTint="@android:color/darker_gray"
         android:text="@string/button_text"
         android:textColor="#B00000" />
