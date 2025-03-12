@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Dark Theme -->
+    <style name="Base.Theme.Fyp" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">#8B0000</item> <!-- Dark Red -->
+        <item name="colorPrimaryContainer">#8B0000</item> <!-- Dark Red Background -->
+        <item name="colorOnPrimary">#121212</item> <!-- White text/icons -->
+        <item name="android:windowBackground">#121212</item> <!-- Dark background -->
+        <item name="colorOnBackground">#FFFFFF</item> <!-- White text -->
+    </style>
+
+    <style name="Theme.Fyp" parent="Base.Theme.Fyp" />
+</resources>
